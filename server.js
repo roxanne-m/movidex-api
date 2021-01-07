@@ -62,6 +62,8 @@ app.use((error, req, res, next) => {
 
 const PORT = process.env.PORT || 8000;
 
+// console here in listen is an exception and does not need to be removed.
+// we can simply leave: app.listen(PORT) without the console.log
 app.listen(PORT, () => {
   console.log(`Server listening at http://localhost:${PORT}`)
 })
